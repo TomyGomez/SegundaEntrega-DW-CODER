@@ -49,6 +49,7 @@ html{
     background-color: rgb(221, 180, 65);
     list-style-type: none;
     text-align: left;
+    display: flex;
     height: 20%;
 }
 .navbar{
@@ -79,7 +80,7 @@ html{
 }
 
 .navbar_enlaces_liFaq{
-    text-align: end;
+    text-align: start;
     position: static;
     
 
@@ -410,12 +411,7 @@ main{
     font-weight: 700;
     color: rgb(92, 66, 2);
 }
-.i_img_{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    margin: 10%;
-}
+
 
 
 
@@ -480,11 +476,18 @@ main{
 /* redes sociales  */
 
 .i_img{
-    text-align: right;
+    display: flex;
+    color: #483101;
+    justify-content: space-evenly;
+    
+}
+
+.navbar_enlaces_faq{
     display: flex;
     flex-direction: row;
-    padding: -2 1rem;
 }
+
+
 
 .footerPadre{
     height: 5%;
