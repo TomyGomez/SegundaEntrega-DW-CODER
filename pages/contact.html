@@ -9,7 +9,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap" rel="stylesheet">
-    <title>Contacto</title>
+    <title> Contacto! || Norless Gaming </title>
+    <!-- cdn bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
 </head>
 <body class="bodyContact">
         <!-- este va a ser el header del index  -->
@@ -24,12 +27,24 @@
                 </div>
 
                 <div class="navbar_enlaces_Div">
-                    <li class="navbar_enlaces_links"><a class="navbar_enlaces_links_texto" href="../index.html">Inicio</a></li>
-                    <li class="navbar_enlaces_links"><a class="navbar_enlaces_links_texto" href="./products.html">Productos</a></li>
-                    <li class="navbar_enlaces_links"><a class="navbar_enlaces_links_texto" href="./contact.html">Contacto</a></li>
-                    <li class="navbar_enlaces_links"><a class="navbar_enlaces_links_texto" href="./aboutUs.html">Sobre Nosotros</a></li>
+                    <li class="navbar_enlaces_links">
+                        <a class="navbar_enlaces_links_texto" href="../index.html">Inicio</a>
+                    </li>
+                    
+                    <li class="nav-item dropdown" class="navbar_enlaces_links">
+                        <a class="navbar_enlaces_links_texto" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><img  class="desplegableImg" src="../assets/img/desplegable.png" alt=""></a>
+                            <ul class="dropdown-menu ">
+                    <li class="desplegables_links"><a class="navbar_enlaces_links_tex" href="./products.html">Productos</a></li>
+                    <li class="desplegables_links"><a class="navbar_enlaces_links_tex" href="./contact.html">Contacto</a></li>
+                    <li class="desplegables_links"><a class="navbar_enlaces_links_tex" href="./aboutUs.html">Sobre Nosotros</a></li>
+
+                        
+                        </ul>
+                    </li>
                 </div>
+        
             </ul>
+            
         </nav>
 
     </header>
@@ -69,18 +84,18 @@
                                         <option value="Pe">Peru</option>
                                     </select>
                             </div>
-
-                            <div class="divForm" id="idDivEncuesta">
-                                <label for="nombre">Nacionalidad</label>
-                                    <select class="DesplegableForm" name="Pais">
-                                        <option value="opcion">Seleccione una opcion</option>
-                                        <option value="arg">Argentina</option>
-                                        <option value="Chi">Chile</option>
-                                        <option value="Uy">Uruguay</option>
-                                        <option value="Py">Paraguay</option>
-                                        <option value="Pe">Peru</option>
-                                    </select>
-                            </div>
+<!-- 
+                        <div class="divForm" id="idDivEncuesta">
+                            <label for="nombre">Nacionalidad</label>
+                                <select class="DesplegableForm" name="Pais">
+                                    <option value="opcion">Seleccione una opcion</option>
+                                    <option value="arg">Argentina</option>
+                                    <option value="Chi">Chile</option>
+                                    <option value="Uy">Uruguay</option>
+                                    <option value="Py">Paraguay</option>
+                                    <option value="Pe">Peru</option>
+                                </select>
+                            </div> -->
 
                             <div class="divForm" id="idParrafo">
                                 <label for="bio" >Texto</label>
@@ -96,57 +111,74 @@
                         <!-- <img class="imagen_contacto" src="../Assets/img/videojuego.jpg" alt=""> -->
             </section>
             <hr class="hrContact">
-            <section class="SecInformacion">
+            <footer class="SecInformacion">
                         <div class="ContactosMails">
                             <h1 class="h1Contacto">Mails de Contacto:</h1>
-                            <p class="pContacto">Ventas: Milton Martinez: mMartinez@ng.com.ar</p>
-                            <p class="pContacto">Diseñado: Estela presnikof: Epresnikof@ng.com.ar</p>
-                            <p class="pContacto">Administracion: Marvic Salazar: mSalazar@ng.com.ar</p>
-                            <p class="pContacto">Soporte: Esteban Pulemyot: ePulemyot@ng.com.ar</p>
-                            <p class="pContacto">Sistemas: Tomas Joaquin Gomez: tgomez@ng.com.ar</p>
+                            <p class="pContacto"><strong>Ventas</strong> <br>Milton Martinez: mMartinez@ng.com.ar</p>
+                            <p class="pContacto"><strong>Diseñador</strong> <br>Estela presnikof: Epresnikof@ng.com.ar</p>
+                            <p class="pContacto"><strong>Administracion</strong> <br>Marvic Salazar: mSalazar@ng.com.ar</p>
+                            <p class="pContacto"><strong>Soporte</strong> <br>Esteban Pulemyot: ePulemyot@ng.com.ar</p>
+                            <p class="pContacto"><strong>Sistemas</strong> <br>Tomas Joaquin Gomez: tgomez@ng.com.ar</p>
                         </div>
 
                         <div class="contactosTelefonos">
                             <h1 class="h1Contacto">Telefonos de Contacto</h1>
 
-                                <div>
-                                    <p class="pContacto">Argentina: Milton Martinez: mMartinez@ng.com.ar</p>
-                                </div>
-                                
-                                <div>
-                                    <p class="pContacto">Uruguay: Estela presnikof: Epresnikof@ng.com.ar</p>
+                                <div class="banderas">
+                                    <a class="contenedorBandera"><img src="../assets/img/Banderas/ar.svg" alt="arBandera" class="imgBan">Argentina</a>
+                                    <p class="pContacto">Milton Martinez: <strong>+54 9 11 2345-6789</strong></p>
                                 </div>
 
-                                <div>
-                                    <p class="pContacto">Chile: Marvic Salazar: mSalazar@ng.com.ar</p>
+                                <div class="banderas">
+                                    <a class="contenedorBandera"><img src="../assets/img/Banderas/uy.svg" alt="uyBandera" class="imgBan">Uruguay</a>
+                                    <p class="pContacto">Estela presnikof: <strong>+598 91 876 543</strong></p>
                                 </div>
 
-                                <div>
-                                    <p class="pContacto">Paraguay: Esteban Pulemyot: ePulemyot@ng.com.ar</p>
+                                <div class="banderas">
+                                    <a class="contenedorBandera"><img src="../assets/img/Banderas/cl.svg" alt="clBandera" class="imgBan">Chile</a>
+                                    <p class="pContacto">Marvic Salazar: <strong>+56 9 9876 5432</strong></p>
                                 </div>
 
-                                <div>
-                                    <p class="pContacto">Peru: Tomas Joaquin Gomez: tgomez@ng.com.ar</p>
+                                <div class="banderas">
+                                    <a class="contenedorBandera"><img src="../assets/img/Banderas/py.svg" alt="pyBandera" class="imgBan">Paraguay</a>
+                                    <p class="pContacto">Esteban Pulemyot: <strong>+595 971 654 321</strong></p>
+                                </div>
+
+                                <div class="banderas">
+                                    <a class="contenedorBandera"><img src="../assets/img/Banderas/pe.svg" alt="peBandera" class="imgBan">Peru</a>
+                                    <p class="pContacto">Tomas Joaquin Gomez: <strong>+51 9 8765 4321</strong></p>
                                 </div>
 
                         </div>
 
-                        <div class="RedesSociales">
+                        <div class="redesSociales">
+                            <h1 class="h1Contacto">Telefonos de Contacto</h1>
                             <ul class="ulPreguntasFreq">
                                 <li class="navbar_enlaces_liFaq"><a class="navbar_enlaces_links_faq" href="../pages/faq.html">Preguntas Frecuentes</a></li>
                             </ul>
                             <!-- logos de redes sociales -->
-                            <div class="i_img"> 
-                                <i class="fa-brands fa-instagram"></i>
-                                <i class="fa-brands fa-facebook"></i>
-                                <i class="fa-brands fa-twitter"></i>
+                            <div class="redesSocialesContainer"> 
+                                <div class="redesSocialesDiv">
+                                    <a href="" class="contenedorRs"><img src="../assets/img/redesSociales/linkedin.png" alt="lnLogo" class="imgRs">Linkedin</a>                                </div>
+
+                                <div class="redesSocialesDiv">
+                                    <a href="" class="contenedorRs"><img src="../assets/img/redesSociales/github-sign.png" alt="ghLogo" class="imgRs">Github</a>                                </div>
+
+                                <div class="redesSocialesDiv">
+                                    <a href="" class="contenedorRs"><img src="../assets/img/redesSociales/instagram.png" alt="igLogo" class="imgRs">Instagram</a>
+                                </div>
+                                
+                                <div class="redesSocialesDiv">
+                                    <a href="" class="contenedorRs"><img src="../assets/img/redesSociales/whatsapp.png" alt="wpLogo" class="imgRs">Whatsapp</a>
+                                </div>
+                        
                             </div>
                             <br>
                         </div>
 
 
 
-            </section>
+            </footer>
         
     </main>
 
@@ -157,6 +189,10 @@
 
 
     </footer>
-    <script src="https://kit.fontawesome.com/83e7bc44d2.js" crossorigin="anonymous"></script>
+    
+
+    <!-- cdn bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
 </body>
 </html>
